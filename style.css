@@ -1,0 +1,179 @@
+/* 共通レイアウト */
+
+
+.inner{
+    /* width: 1020px; */
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  
+}
+.outer-wrap{
+    width: 100%;
+}
+
+
+.top-name{
+    font-family: 'Permanent Marker', cursive;
+    width: 100%;
+}
+.container{
+    background: #fffaf0;
+}
+
+
+
+.header{
+    background-image: url(img/admDSC_0738.jpg);
+    background-size:cover;
+    height: 600px;
+    background-repeat:  no-repeat;
+    width: 100%;
+    opacity: 0.7;
+}
+.header h1{
+    font-size: 50px;
+    position: relative;
+    top: 23px;
+    left: 200px;
+   width: 50%;
+    opacity: 0.6;
+}
+.header-nav{
+    z-index: 10;
+}
+.header-nav a:hover{
+
+    cursor: pointer;
+
+}
+.header h1:after{
+    position: absolute;
+    content: "KOBAYASHI";
+    font-family: 'Permanent Marker', cursive;
+    top: 60px;
+    left: 40px;
+}
+.header-nav{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    float: right;
+}
+.resaon{
+    margin:0 auto;
+    border: 1px solid #fffafa;
+}
+.reason-title{
+    margin-top: 30px;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 60px;
+    color: #696969;
+
+}
+.reason-text{
+    width: 50%;
+    margin: 0 auto;
+    border: solid rgb(255, 248, 248);
+    background: #fcebeb;
+    border-radius: 10px;
+    padding: 30px;
+    line-height: 32px;
+    
+}
+.intro-title{
+    font-size: 26px;
+    font-weight: bold;
+    color: #696969;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+.intro-section{
+    width: 80%;
+    margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+.self-image{
+    width: 30%;
+   border-radius: 20px;
+   height: auto;
+   
+}
+.intro-text{
+ 
+    width: 50%;
+    padding: 30px;
+    line-height: 50px;
+}
+
+.skill{
+    width: 100%;
+}
+.skill-tag{
+    margin: 30px ;
+}
+.skil-items{
+    display: flex;
+    flex-wrap:wrap;
+    width: 70%;
+    margin: 10px auto;
+    text-align: center;
+    box-sizing: border-box;
+   
+   
+}
+.skil-items li{
+    width: calc(100% / 3);
+    text-align: center;
+    width: auto;
+    margin: 0 auto;
+    margin-bottom: 48px;
+    box-shadow:0px 8px 10px -3px rgba(0,0,0,0.5); 
+    border-radius: 10px;
+  
+}
+.product-item-wrap{
+    margin: 52px auto;
+    text-align: center;
+    /* overflow: hidden; */
+}
+.skil-items li img{
+    width: 100%;
+    margin-top: 20px;
+   
+}
+.product-title{
+    text-align: center;
+}
+.product-itemlist{
+    margin: o auto;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    border-radius:5px ;
+}
+.product-item{
+    width: 30%;
+    margin-bottom: 32px;
+    margin: 32px auto;
+    text-align: center;
+  
+}
+.product-item img{
+    width: 100%;
+    position: relative;
+}
+
+.product-item p{
+    display: inline-block;
+    margin-bottom: 12px;
+}
+.background:hover{
+    background-color: #696969;
+    opacity: 0.7;
+    
+}
