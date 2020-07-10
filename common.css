@@ -12,7 +12,15 @@
     font-weight: bold;
     margin: 30px;
     font-family: 'Galada', cursive;
+    display: flex;
+    align-items: center;
 }
+.title:before,:after{
+    border-top: 1px solid;
+    content: "";
+    flex-grow: 1;
+}
+
 .top-title{
     z-index: 100;
 }
