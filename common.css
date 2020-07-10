@@ -12,13 +12,24 @@
     font-weight: bold;
     margin: 30px;
     font-family: 'Galada', cursive;
+   
+}
+.boder-solid{
     display: flex;
     align-items: center;
 }
-.title:before,:after{
+.boder-solid:before,.boder-solid:after{
     border-top: 1px solid;
-    content: "";
     flex-grow: 1;
+    content: "";
+}
+.boder-solid:before{
+    margin-left: 100px;
+    margin-right: 20px;
+}
+.boder-solid:after{
+    margin-right: 100px;
+    margin-left: 20px;
 }
 
 .top-title{
@@ -92,7 +103,7 @@
 .history{
     display: block;
     flex-direction:column;
-    width: 50%;
+    width: 60%;
     margin-left: 30px;
     line-height: 32px;
     margin: 0 auto;
@@ -102,15 +113,17 @@
     border-radius: 10px;
 
 }
+
+
 .history h3{
     text-align: center;
     font-weight: bold;
-    font-family: 'Galada', cursive;
+   
 }
 .history h4{
     text-align: center;
     font-weight: bold;
-    font-family: 'Galada', cursive;
+  
 }
 
 .history p{
@@ -120,6 +133,9 @@
 .skill{
     display: flex;
     flex-wrap:wrap;
+    
+}
+.skill-title{
     font-family: 'Galada', cursive;
 }
 .skill-item{
@@ -130,6 +146,10 @@
     border: 1px solid #d1cece;
     box-shadow: 0px 8px 10px -3px rgba(0,0,0,0.5);
 
+}
+.jquery-item{
+    padding-top: 10px;
+    padding-bottom: 30px;
 }
 .skill-item img{
     width: 30%;
@@ -145,8 +165,6 @@
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
-   
-
 }
 .works-title{
     text-align: center;
