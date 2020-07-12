@@ -78,10 +78,7 @@
     margin: 0 auto;
     display: flex;
   justify-content: space-around;
-  font-family: 'Galada', cursive;
   
-
- 
   
 }
 .self-img{
@@ -118,11 +115,13 @@
 .history h3{
     text-align: center;
     font-weight: bold;
+    font-family: 'Galada', cursive;
    
 }
 .history h4{
     text-align: center;
     font-weight: bold;
+   
   
 }
 
@@ -329,4 +328,160 @@ padding: 10px;
 .cercle-baner.is-over{
     right: 10px;
     transform: translateX(0) rotate(0);
+}
+/* スマホメニュー */
+.sp-menu{
+    display: none;
+    width: 100%;
+    height: 100vh;
+    background: #000;
+}
+.sp-menu.is-active{
+    display: block;
+    width: 100%;
+   
+}
+.sp-nav{
+    width: 100%;
+    margin: 0 auto;
+    
+}
+.sp-nav li{
+    text-align: center;
+    font-size: 16px;
+    z-index: 10;
+    color: white;
+
+}
+
+
+@media screen and (max-width:768px){
+    .container{
+        width: 100%;
+    }
+    .title{
+        margin:30px auto;
+    }
+    .top-title{
+        font-size: 20px;
+    }
+    .nav-list{
+        display: none;
+    }
+    .sp-menu{
+        position: fixed;
+        display: block;
+        width: 100%;
+        top: 45px;
+        left: 100%;
+        background: rgba(255,255,255,0.95);
+        height: 100vh;
+        z-index: 10;
+        transition: all 0.4s;
+    }
+    .sp-nav{
+        width: 100%;
+        margin: 0 auto;
+        
+    }
+    .sp-nav li{
+        text-align: center;
+        font-size: 16px;
+        z-index: 10;
+        color: black;
+        font-size: 16px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        height: 100%;
+        font-family: 'Galada', cursive;
+    
+    }
+    
+    .sp-trigger{
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: all 0.4s;
+        width: 30px;
+        height: 20px;
+        z-index: 100;
+        display: block;
+
+    }
+    .sp-trigger span{
+        display: inline-block;
+    transition: all 0.4s;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #000;
+    }
+    .sp-trigger span:nth-of-type(1){
+        top: 0;
+    }
+    .sp-trigger span:nth-of-type(2){
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .sp-trigger  span:nth-of-type(3){
+        bottom: 0;
+    }
+    
+    .sp-nav li{
+margin: 100px auto;
+    }
+    /* jsで変更されるところ */
+    .sp-menu.is-active{
+        left: 0;
+
+    }
+    .sp-trigger.is-active span:nth-of-type(1){
+        transform: translateY(9px) rotate(-315deg);
+    }
+    .sp-trigger.is-active span:nth-of-type(2){
+        opacity: 0;
+    }
+    .sp-trigger.is-active span:nth-of-type(3){
+        transform: translateY(-9px) rotate(315deg);
+    }
+    
+    .about img{
+        width: 100%;
+        display: block;
+    }
+    .self-img{
+       display: none;
+    }
+    .history-items{
+        width: 100%;
+    }
+    .history{
+        width: 80%;
+    }
+    .skill{
+        display: block;
+        width: 100%;
+    }
+    .skill-item{
+        width: 80%;
+    }
+    .works{
+        display: block;
+        width: 100%;
+    }
+    .works-item{
+        width: 80%;
+        margin:30px auto;
+    }
+    .contact{
+        width: 100%;
+    }
+    .form{
+        width: 100%;
+    }
+
+
+
+  
 }

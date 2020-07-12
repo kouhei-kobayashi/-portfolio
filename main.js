@@ -1,3 +1,18 @@
+$(function(){
+    $('.sp-trigger').on('click',function(){
+        $(this).toggleClass('is-active');
+        $('.sp-menu').toggleClass('is-active');
+    })
+})
+
+
+
+
+
+
+
+
+
 $(window).on("scroll",function(){
 //    fadeIn
 $('[data-fadeIn]').each(function(index,el){
