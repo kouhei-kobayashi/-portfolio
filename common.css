@@ -332,9 +332,7 @@ padding: 10px;
 /* スマホメニュー */
 .sp-menu{
     display: none;
-    width: 100%;
-    height: 100vh;
-    background: #000;
+    
 }
 .sp-menu.is-active{
     display: block;
@@ -372,7 +370,7 @@ padding: 10px;
         position: fixed;
         display: block;
         width: 100%;
-        top: 45px;
+        top: 48px;
         left: 100%;
         background: rgba(255,255,255,0.95);
         height: 100vh;
